@@ -15,8 +15,6 @@ var_dump(Neighbour::NeighbourRandom());
 
 
 
-
-
 if (!$_SESSION['current']) {
     $_SESSION['current'] = 1;
 }
