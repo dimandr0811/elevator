@@ -10,9 +10,10 @@ require_once 'classes/Neighbour.php';
 
 
 session_start();
-var_dump(Neighbour::NeighbourRandom());
 
-
+echo "<pre>";
+var_dump($_SESSION);
+echo "</pre>";
 
 
 if (!$_SESSION['current']) {
@@ -26,8 +27,8 @@ if ($_GET['f']) {
 
 $elevator = new Elevator($_SESSION['future'], $_SESSION['current']);
 if ($elevator) {
-    $time = $elevator->timeToWait();
-    $message = $elevator->goFloor();
+    $time = $elevator->start();
+    $message = $elevator->Floor();
     $_SESSION['current'] = $_SESSION['future'];
 
 }
