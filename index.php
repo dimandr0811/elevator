@@ -1,12 +1,10 @@
 <?php
-error_reporting(-1);
+error_reporting(0);
 use classes\firstElevator\Elevator;
 
 
 require_once 'vendor/autoload.php';
-require_once 'classes/firstElevator/Elevator.php';
-require_once 'classes/firstElevator/ElevatorText.php';
-require_once 'classes/firstElevator/Neighbour.php';
+
 
 
 session_start();
