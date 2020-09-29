@@ -1,7 +1,7 @@
 <?php
 
 
-namespace classes;
+namespace classes\firstElevator;
 
 
 class Neighbour
@@ -31,7 +31,7 @@ class Neighbour
             $neighbourFloor = rand(1,10);
             $neighbourFutureFloor = rand(1,10);
 
-            if ($neighbourFloor = $neighbourFutureFloor){
+            while ($neighbourFloor == $neighbourFutureFloor){
                 $neighbourFutureFloor = rand(1,10);
             }
 
@@ -47,4 +47,5 @@ class Neighbour
         return static::NeighbourFloor(); // определяем этажи соседа
 
     }
+
 }

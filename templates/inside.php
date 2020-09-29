@@ -23,7 +23,7 @@
 <div class="container">
     <div class="row">
         <div class="col-2">
-            <a href="index.php?f=1" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">1</a></button>
+            <a href="index.php?f=1" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">1</a>
         </div>
         <div class="col-2">
             <a href="index.php?f=2" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">2</a>

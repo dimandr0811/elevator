@@ -1,12 +1,12 @@
 <?php
-error_reporting(0);
-use classes\Elevator;
-use classes\Neighbour;
+error_reporting(-1);
+use classes\firstElevator\Elevator;
+
 
 require_once 'vendor/autoload.php';
-require_once 'classes/Elevator.php';
-require_once 'classes/ElevatorText.php';
-require_once 'classes/Neighbour.php';
+require_once 'classes/firstElevator/Elevator.php';
+require_once 'classes/firstElevator/ElevatorText.php';
+require_once 'classes/firstElevator/Neighbour.php';
 
 
 session_start();
@@ -28,7 +28,7 @@ if ($_GET['f']) {
 $elevator = new Elevator($_SESSION['future'], $_SESSION['current']);
 if ($elevator) {
     $time = $elevator->start();
-    $message = $elevator->Floor();
+    $message = $elevator->floor();
     $_SESSION['current'] = $_SESSION['future'];
 
 }
